@@ -1,0 +1,117 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	border: solid black;
+	background-image: linear-gradient(#cc5500 , #D2B48C);
+	
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 5px;
+	left: 0;
+  	bottom: 0;
+	width: 100%;
+	position: fixed;
+}
+
+header {
+	text-align: center;
+	border: solid black;
+}
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+.main-container {
+	display: inline-flex;
+	padding: 1em;
+	text-align: center;
+	border: solid black;
+	flex-direction: row;
+
+}
+
+.main-container p {
+	border: solid black;
+
+}
+
+.main-nav {
+	color: black;
+	border: solid black;
+	
+}
+
+.main-nav li {
+	margin: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: solid black;
+	float: right;
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.title {
+	float: left;
+	font-family: "Brush Script MT", sans-serif;
+}
+
+.form {
+	text-align: center;
+	display: flex;
+	border: solid black;
+}
+
+.form p {
+	border: 0;
+	margin: 0;
+}
+
+.ing01 {
+	display: table;
+}
+
+.col {
+	flex: 1;
+	justify-content: space-around;
+}
+
+

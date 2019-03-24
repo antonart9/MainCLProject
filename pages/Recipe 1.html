@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets Cook Something!</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+    
+    <body>
+        <header>
+        
+        <h1 class="title">Recipes</h1>
+        <ul class="main-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="Recipe 2.html">Recipe 2</a></li>
+            <li><a href="Recipe 3.html">Recipe 3</a></li>
+            <script src="../js/rec1.js"></script>
+        </ul>
+        </header>
+
+        <h2>Portion Size:</h2>
+        <form action="get">
+            <p>
+                <label for="servings">How Many Servings? (Min 10)</label>
+                <input type="number" id="servings" min="10" max="100">
+            </p>
+
+            <p>
+                <input type="button" onClick="calculateServings()" value="Calculate!">
+            </p>
+        </form>
+
+        <h2>Ingredients</h2> 
+            
+            <ul class="ing01">
+                <li><input type="checkbox"> Egg(s): <span id="egg"></span></li>
+                <li><input type="checkbox"> Meat: <span id="meat"></span> lbs</li>
+                <li><input type="checkbox"> Onions: <span id="onion"></span>  cups</li>
+                <li><input type="checkbox"> Vegetable Oil: <span id="vego"></span>  tbs</li>
+                <li><input type="checkbox"> Cold Water: <span id="waterc"></span>  cups</li>
+                <li><input type="checkbox"> Salt: <span id="saltc"></span>  tsp</li>
+                <li><input type="checkbox"> Warm Water: <span id="waterw"></span>  Cups</li>
+                <li><input type="checkbox"> Flour: <span id="flour"></span>  cups</li>
+                <li><input type="checkbox"> Ground Sea Salt: <span id="salt"></span>  tsp</li>
+            </ul>
+    
+    <h2>Instructions</h2>
+    <p></p>
+    
+ 
+        <footer>2019 &copy AA</footer>
+        
+    </body>
+
+    
+    
+</html>
