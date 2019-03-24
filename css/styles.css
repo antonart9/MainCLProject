@@ -20,6 +20,11 @@ p {
 	margin-bottom: 1.8em;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 h2,
 h3,
 a {
@@ -62,7 +67,7 @@ header {
 	text-align: center;
 	border: solid black;
 	flex-direction: row;
-
+	
 }
 
 .main-container p {
