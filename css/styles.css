@@ -81,16 +81,20 @@ header {
 	
 }
 
+.ul {
+	float: right;
+}
+
 .main-nav li {
 	margin: 15px;
+	margin-left: 25px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	padding-left: 3px;
 	padding-right: 3px;
 	border: solid black;
-	float: right;
-	display: flex;
-	flex-direction: row;
+	display: inline-flex;
+	flex-direction: column-reverse;
 	
 }
 
