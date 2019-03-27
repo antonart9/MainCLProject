@@ -3,60 +3,128 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lets Cook Something!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/jQuery-v.3.3.1.js"></script>
     <script src="../js/rec1.js"></script>
+    <script src="../js/jQuerry.js"></script>
 
 </head>
     
     <body>
-        <div class="main-nav">
+        
         <header>         
-         <h1 class="title">Recipes</h1>
+        <a href="../index.html"><h1 class="title">Recipes</h1></a>
             <div class="nav-container">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="Recipe 2.html">Recipe 2</a></li>
-                    <li><a href="Recipe 3.html">Recipe 3</a></li>
-                    
-                </ul>
+                
             </div>
         </header>
-        </div>
-        <h2>Portion Size:</h2>
-        <form action="get">
-            <p>
-                <label for="servings">How Many Servings? (Min 10)</label>
-                <input type="number" id="servings" min="10" max="100">
-            </p>
+        
+        <div class="col-md-12" >
+        
+            <ul class="row">
+                <div class="col-sm-4">
+                    <li class="card md-4">
+                        <img src="../img/bread 1.jpg" class="card-img-top" alt="Crusty French Bread Picture">
+                        <div class="card-body">
+                            <a href="../pages/Recipe 2.html" class="btn btn-light">
+                                <h5 class="card-title">Crusty French Bread</h5>
+                            </a>
+                        </div>
+                    </li>
+                </div>
 
-            <p>
-                <input type="button" onClick="calculateServings()" value="Calculate!">
-            </p>
-        </form>
-
-        <h2>Ingredients</h2> 
-            
-            <ul class="ing01">
-                <li><input type="checkbox"> Egg(s): <span id="egg"></span></li>
-                <li><input type="checkbox"> Meat: <span id="meat"></span> lbs</li>
-                <li><input type="checkbox"> Onions: <span id="onion"></span>  cups</li>
-                <li><input type="checkbox"> Vegetable Oil: <span id="vego"></span>  tbs</li>
-                <li><input type="checkbox"> Cold Water: <span id="waterc"></span>  cups</li>
-                <li><input type="checkbox"> Salt: <span id="saltc"></span>  tsp</li>
-                <li><input type="checkbox"> Warm Water: <span id="waterw"></span>  Cups</li>
-                <li><input type="checkbox"> Flour: <span id="flour"></span>  cups</li>
-                <li><input type="checkbox"> Ground Sea Salt: <span id="salt"></span>  tsp</li>
+                <div class="col-sm-4">
+                <li class="card text-black bg-secondary md-4">
+                    
+                    <img src="../img/pelmeni 2.jpg" class="card-img-top" alt="Pelmeni (Russian Meat Dumplings) Picture">
+                    
+                    <div class="card-body">
+                        
+                        <form action="get">
+                            <h2>Portion Size:</h2>
+                            <p>
+                                <label for="servings">How Many Servings? (Min 10)</label>
+                                <input type="number" id="servings" min="10" max="100">
+                            </p>
+                            <p>
+                                <input type="button" onClick="calculateServings()" value="Calculate!">
+                            </p>
+                        </form>
+                    
+                    </div>
+                </li>
+                </div>
+                
+                <div class="col-sm-4">
+                <li class="card text-white bg-secondary" >
+                    <div class="card-body">
+                        <h2>Ingredients</h2> 
+                        
+                        <ol>
+                            <li><input type="checkbox"> Egg(s): <span id="egg"></span></li>
+                            <li><input type="checkbox"> Meat: <span id="meat"></span> lbs</li>
+                            <li><input type="checkbox"> Onions: <span id="onion"></span>  cups</li>
+                            <li><input type="checkbox"> Vegetable Oil: <span id="vego"></span>  tbs</li>
+                            <li><input type="checkbox"> Cold Water: <span id="waterc"></span>  cups</li>
+                            <li><input type="checkbox"> Salt: <span id="saltc"></span>  tsp</li>
+                            <li><input type="checkbox"> Warm Water: <span id="waterw"></span>  Cups</li>
+                            <li><input type="checkbox"> Flour: <span id="flour"></span>  cups</li>
+                            <li><input type="checkbox"> Ground Sea Salt: <span id="salt"></span>  tsp</li>
+                        </ol>
+                    </div>
+                </li> 
+                </div>
             </ul>
-    
-    <h2>Instructions</h2>
-    <p></p>
-    
+        
+        </div>
+                <div class="col-md-12">
+                    <li class="card text-center">                 
+                            <div class="card-body">               
+                                <h2>Instructions</h2>
+                                    <div id="dialog"  title="Pelmeni Instructions">
+                                       
+                                    </div>
+                            
+                
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                   <span>The Dough: <br>
+                  <p>Prepare warm water flour....</p></span>  
+                </div>
+                <div class="carousel-item">
+                    
+                </div>
+                <div class="carousel-item">
+                    
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+     
+        </div>                                  
+                    </li>
+                </div>
  
-        <footer>2019 &copy AA</footer>
+  
         
     </body>
-
-    
+<footer>2019 &copy AA</footer>
+          
     
 </html>

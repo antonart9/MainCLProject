@@ -1,4 +1,3 @@
-
 function calculateServings() {
     
     var serv = document.getElementById("servings").value;
@@ -12,3 +11,4 @@ function calculateServings() {
     document.getElementById("flour").innerHTML = Math.round(serv/4);
     document.getElementById("salt").innerHTML = Math.round(serv/12);
 }
+
