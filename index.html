@@ -13,67 +13,86 @@
 
 <body>
         
-        <header class="main-nav">
-            <h1 class="title">Recipes</h1>
-            <div class="nav-container">
-                <ul>
-                    <li><a href="pages/Recipe 1.html">Recipe 1</a></li>
-                    <li><a href="pages/Recipe 2.html">Recipe 2</a></li>
-                    <li><a href="pages/Recipe 3.html">Recipe 3</a></li>
-                </ul>
-            </div>
-        </header>
-        
-        <div class="main-container">
+        <header>
             
-            <div class="col 1">
-                <p>A place for you to try my recipies at home. Pick one of the links and check your kitchen for the 
-                    ingridients. Think of who around you is hungry so you know exactly how much ingridients to use.</p>
-            </div>
-
-            <div>
-                <img src="img/coffe.jpg" class="col 2" title="Fancy Picture of a Coffe Mug" alt="Picture of a cup of coffeon a table" style="width: 350px; height: 350">
-            </div>
-        
-            <div class="col 3">
                 
-                <h3>Sign Up for Recipe email List!!</h3>
-                 
+            <h1 class="title">Recipes</h1>
+            
+        </header>
+
+            <div class="main-container">
+            
+                <div class="col 1">
+                    <p>A place for you to try my recipies at home. Pick one of the links and check your kitchen for the
+                        ingridients. Think of who around you is hungry so you know exactly how much ingridients to use.</p>
+                    
+                    <div class="col-md-12">
+                        <ul class="card-group">
+                            <li class="card">
+                                <img src="img/pelmeni 1.jpg" class="card-img-top" alt="Pelmeni (Russian Meat Dumplings) Picture">
+                                <div class="card-body">
+                                    <a href="pages/Recipe 1.html" class="btn btn-light">
+                                        <h5 class="card-title">Pelmeni (Russian Meat Dumplings)</h5>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <img src="img/bread 1.jpg" class="card-img-top" alt="Crusty French Bread Picture">
+                                <div class="card-body">
+                                    <a href="pages/Recipe 2.html" class="btn btn-light">
+                                        <h5 class="card-title">Crusty French Bread</h5>
+                                    </a>
+                                </div>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+            
+                <div>
+            
+                </div>
+            
+                <div class="col 3">
+            
+                <form action="index.html" method="post">
+                        <h3>Sign Up for Recipe email List!!</h3>
+                            <p><label for="name">Name</label>
                 
-
-                   
-                        <form action="index.html" method="post">
-                            
-                            <p><label for="name" >Name</label>
-                            
-                                <input type="text" id="name" name="user_name"></p>
-                        
-                            <p><label for="email" >e-mail Address</label>
-                                
-                                <input type="text" id="email" name="email"></p>
-                            
-                            <p><textarea type="text" id="comments" class="comments">Dietary Restrictions if any...</textarea></p>
-                                        
-                            <p><input type="radio" name="diet" value="veg">Vegetarian<br>
-
-                                <input type="radio" name="diet" value="pesc">Pescatarian<br>
-                                <input type="radio" name="diet" value="other">Other<br></p> 
-                        
-                            <div class="button">
-                                
+                                <input type="text" id="name" name="user_name" style="width:446px; height:35px;"></p>
+                
+                            <p><label for="email">e-mail Address</label>
+                
+                                <input type="text" id="email" name="email" style="width:356px; height:35px;"></p>
+                
+                            <p><textarea type="text" id="comments" class="comments" style="width:501px; height:75px;">Dietary Restrictions if any...</textarea></p>
+                
+                            <p><input type="radio" name="diet" value="veg"> Vegetarian<br>
+                
+                                <input type="radio" name="diet" value="pesc"> Pescatarian<br>
+                                <input type="radio" name="diet" value="other"> Other<br></p>
+                
+                            <div class="butf">
+                
                                 <input type="submit" value="Sign Up!" class="submit">
                                 <input type="reset" value="Reset" class="submit">
-                            
-                        </div>
-                    
+                
+                            </div>
+                
                     </form>
-                
-                
-        
+            
+            
+            
+                </div>
+            
             </div>
-        
-        </div>   
 
+                
+      
+            
+        
+        
+    
     <footer>2019 &copy AA</footer>
 
 </body>
