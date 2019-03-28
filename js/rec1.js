@@ -1,3 +1,8 @@
+
+/* below function is used to calculate ingridient portions based on selected
+serving size from the user */
+
+
 function calculateServings() {
     
     var serv = document.getElementById("servings").value;

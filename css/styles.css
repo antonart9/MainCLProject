@@ -1,6 +1,5 @@
-/* ================================= 
-  Base Element Styles
-==================================== */
+
+/*Base Element Styles */
 
 * {
 	box-sizing: border-box;
@@ -46,12 +45,10 @@ img {
 
 footer {
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 70px;
 	left: 0;
   	bottom: 0;
 	width: 100%;
-	height: 100%;
-	position: relative;
 	background: linear-gradient(#e0c16c, #da9e45);
 }
 
@@ -64,6 +61,8 @@ h1 {
 	margin: auto;
 	margin-top: 30px;
 }
+
+/*header element with a picture link*/
 
 header {
 	background: url('../img/coffe.jpg') no-repeat bottom right;
@@ -82,26 +81,20 @@ header {
 	
 }
 
-/* ================================= 
-  Base Element Styles
-==================================== */
+/* Container styles */
 
 .main-container {
 	display: inline-flex;
 	padding: 1em;
 	text-align: center;
 	flex-direction: row;
-	
+	margin: auto;
+	margin-bottom: 52px;
 }
 
 .card {
 	box-shadow: 5px 3px rgb(94, 89, 89);
 	margin-top: 20px;
-}
-
-.main-container {
-	margin: auto;
-	margin-bottom: 52px;
 }
 
 .main-nav {
@@ -112,23 +105,6 @@ header {
 	padding-bottom: 15px;
 	padding-top: 15px;
 	border-top-style: dashed;
-}
-
-.nav-container {
-	float: right;
-	
-}
-
-.main-nav li {
-	margin: 15px;
-	margin-left: 25px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	padding-left: 3px;
-	padding-right: 3px;
-	display: inline-flex;
-	flex-direction: column-reverse;
-	
 }
 
 .title {
@@ -144,6 +120,7 @@ form {
 	box-shadow: 5px 3px rgb(94, 89, 89);
 	padding: auto;
 	height: auto;
+	margin-top: 35px;
 }
 
 p {
@@ -172,6 +149,22 @@ p {
 	margin-left: 0;
 }
 
+.name {
+	width: 446px;
+	height: 35px;
+}
+
+.email {
+	width: 356px;
+	height: 35px;
+}
+
+.comments {
+	width: auto;
+	height: 75px;
+	margin-top: 15px;
+}
+
 
 
 /* ================================= 
@@ -179,25 +172,22 @@ Media Queries
 ==================================== */
 
 
-@media only screen and (max-width: 600px) {
-	html,
-	body {
+@media (max-width: 600px) {
+	
+	html {
 		width: 100%;
-		height: 500px;
-		position: relative;
-		align-items: center;
 	}
 
 	.main-container {
-		
-		display: flex;
-  		align-items: center 
+		display: inline-flex;
+		align-items: center;
+		width: 100%;
 	}
 	
 	header {
 		position: relative;
 		height: 250px;
-		width: 600px;
+		width: 100%;
 		overflow: hidden;
 		z-index: 2;
 		background-size: contain;
@@ -210,48 +200,22 @@ Media Queries
 		padding-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
-		
+		height: auto;
 	}
 	
+	.comments {
+		position: relative;
+		height: auto;
+		width: auto;
+		margin-top: 10px;
+	}
+	
+	p {
+		font-size: 20px;
+	}
+
 	.col {
-		position: fixed;
+		width: auto;
 	}
+
 	
-	p {
-		font-size: 20px;
-	}
-
-	footer {
-		width: 100%;
-		position: fixed;
-		display: center;
-	}
-
-	body {
-		margin: auto;
-	}
-
-@media only screen and (min-width: 800px) {
-
-	.form {
-		padding-top: 10px;
-	}
-
-	.card-body {
-		padding-bottom: 10px;
-	}
-
-	p {
-		font-size: 20px;
-	}
-
-	header {
-		width: 180px;
-		overflow: hidden;
-	}
-
-}
-
-@media only screen and (min-width: 600px) {
-	
-} 

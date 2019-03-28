@@ -15,16 +15,20 @@
     
     <body>
         
-        <header>         
+        <!--header with the main title that is links to the homepage-->
+
+        <header  alt="Picture of a Table with a coffee cup on it">         
         <a href="../index.html"><h1 class="title">Recipes</h1></a>
             <div class="nav-container">
                 
             </div>
         </header>
         
-        <div class="col-md-12" >
+        <!--Card for Picture of the other recipe link-->
+       
+        <div class="col-lg-12" >
         
-            <ul class="row">
+            <ul class="card-group">
                 <div class="col-sm-4">
                     <li class="card md-4">
                         <img src="../img/bread 1.jpg" class="card-img-top" alt="Crusty French Bread Picture">
@@ -35,9 +39,11 @@
                         </div>
                     </li>
                 </div>
+   
+    <!--Card for Picture of recipe and the form for user to enter servings variable-->
 
                 <div class="col-sm-4">
-                <li class="card text-black bg-secondary md-4">
+                <li class="card text-black bg-secondary">
                     
                     <img src="../img/pelmeni 2.jpg" class="card-img-top" alt="Pelmeni (Russian Meat Dumplings) Picture">
                     
@@ -50,7 +56,7 @@
                                 <input type="number" id="servings" min="10" max="100">
                             </p>
                             <p>
-                                <input type="button" onClick="calculateServings()" value="Calculate!">
+                                <input type="button" onClick="calculateServings()"  value="Calculate!" style="margin-top: 15px; margin-bottom: 20px;"><!--<<<<<< Java Click event-->
                             </p>
                         </form>
                     
@@ -58,6 +64,9 @@
                 </li>
                 </div>
                 
+                <!--Ingridients Card. it has the click event for my Java fomula. it calcualtes and rounds down the value of ingridient portions 
+                    based on entered serving size.-->
+
                 <div class="col-sm-4">
                 <li class="card text-white bg-secondary" >
                     <div class="card-body">
@@ -80,42 +89,31 @@
             </ul>
         
         </div>
+
+<!--Recipe card. NOTE!!!!!!: I did not have time to write my recipe down so I copied it from a site that had a similar recipe. the link is here: 
+                https://www.allrecipes.com/recipe/259977/russian-pelmeni/-->
+
                 <div class="col-md-12">
                     <li class="card text-center">                 
                             <div class="card-body">               
                                 <h2>Instructions</h2>
                                     <div id="dialog"  title="Pelmeni Instructions">
-                                       
+                                       <p>Combine egg, vegetable oil, and salt in a measuring cup; add enough water to fill to 1 cup. Pour into a bowl, add 3 cups
+                                    flour, and knead into a smooth, elastic dough. Cover with a kitchen towel and rest for 30 minutes.
+                                    Dust a baking sheet lightly with 1 tablespoon flour.
+                                    Combine ground beef, onion, water, salt, and pepper in a bowl and mix filling thoroughly by hand or using a fork.
+                                    Roll out a portion of the dough very thinly on a lightly floured surface and cut out 2 1/2-inch rounds with a cookie
+                                    cutter or a wine glass. Keep the rest of the dough covered with a towel to avoid drying out. Place 1/2 to 1 teaspoon of
+                                    filling on one side of the dough circle. Fold dough over and seal the edges using fingers, forming a crescent. Join the
+                                    ends and pinch them together. Place on the prepared baking sheet. Repeat with remaining dough and filling. Freeze
+                                    pelmeni for 30 minutes to prevent them from sticking together.
+                                    Bring a large pot of lightly salted water to a simmer and drop small batches of frozen pelmeni into simmering water.
+                                    Cook and stir until the meat is cooked and pelmeni float to the top, about 5 minutes. Continue cooking for an additional
+                                    5 minutes. Transfer to serving plates using a slotted spoon.</p>
                                     </div>
                             
                 
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                   <span>The Dough: <br>
-                  <p>Prepare warm water flour....</p></span>  
-                </div>
-                <div class="carousel-item">
-                    
-                </div>
-                <div class="carousel-item">
-                    
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+        
      
         </div>                                  
                     </li>
